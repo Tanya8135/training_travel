@@ -1,0 +1,14 @@
+// Position
+%flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  %absolutely-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
