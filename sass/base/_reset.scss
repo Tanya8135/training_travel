@@ -1,0 +1,25 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* изменяет вид маркера для каждого элемента 
+                          списка (используется только в таком написании). */
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
