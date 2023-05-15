@@ -1,6 +1,6 @@
 ::selection {
-    color: $invert-color-text;
-    background-color: $bg-selection; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
+    color: $black-text;
+    background-color: $selection-color; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
   }
   
   html {
@@ -8,12 +8,12 @@
   }
   
   body {
-    color: $text-primary;
+    // color: $text-primary;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
-    background-color: $bg-color-site;
+    // background-color: $bg-color-site;
   }
   
   img {

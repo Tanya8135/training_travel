@@ -1,16 +1,17 @@
 .container {
     width: 100%;
-    // max-width: 1168px;
+    // max-width: 1168px; /* возможно не пригодиться */
     margin: 0 auto;
-    padding: 0 24px;
+    // padding: 0 16px;
   
-    @include mobile {
-      width: 420px;
-    }
+    // @include mobile {
+    //   width: 420px;
+    //   padding: 0 16px;
+    // }
   
-    @include desktop {
-      width: 1168px;
-      padding: 0 16px;
-    }
+    // @include desktop {
+    //   width: 1600px;
+    //   // padding: 0 16px;
+    // }
   }
     

@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* выяснить как это работает */
+.mb-8px {
+  margin-bottom: 8px;
+}
+
+.mb-16px {
+  margin-bottom: 16px;
+}
+
+.mb-24px {
+  margin-bottom: 24px;
+}
+
+.mb-32px {
+  margin-bottom: 32px;
+}
+
+.mb-40px {
+  margin-bottom: 40px;
+}
+
+.mr-8px {
+  margin-right: 8px;
+}
+
+.mr-16px {
+  margin-right: 16px;
+}
+
+.mr-24px {
+  margin-right: 24px;
+}
+
+.mr-32px {
+  margin-right: 32px;
+}
+
+.mr-40px {
+  margin-right: 40px;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v12-latin-500.woff2") format("woff2"), url("../fonts/inter-v12-latin-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v12-latin-600.woff2") format("woff2"), url("../fonts/inter-v12-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/mulish-v12-latin-300.woff2") format("woff2"), url("../fonts/mulish-v12-latin-300.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mulish-v12-latin-regular.woff2") format("woff2"), url("../fonts/mulish-v12-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/playfair-display-v30-latin-700.woff2") format("woff2"), url("../fonts/playfair-display-v30-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+::-moz-selection {
+  color: #000000;
+  background-color: rgba(251, 143, 29, 0.3); /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
+}
+::selection {
+  color: #000000;
+  background-color: rgba(251, 143, 29, 0.3); /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
+}
+
+html {
+  scroll-behavior: smooth; /* плавная прокрутка скрол */
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; /* определяет как содержимое заменяемого элемента <img> 
+ или <video>, должно заполнять контейнер относительно его 
+ высоты и ширины. */
+  /*    cover - смещаемый контент меняет свой размер таким образом, 
+                      чтобы сохранять свои пропорции при заполнении блока: окончательный размер 
+                      контента будет определён как "покрытие" блока, ограничиваясь его шириной 
+                      и высотой. */
+}
+
+/* flex-grow: 1; - свойство определяет коэффициент увеличения гибкого элемента по отношению 
+  к другим гибким элементам внутри одного контейнера при условии, что в нем есть свободное 
+  пространство. */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* изменяет вид маркера для каждого элемента 
+списка (используется только в таком написании). */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  padding: 32px 191px 0 191px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding-bottom: 96px;
+}/*# sourceMappingURL=main.css.map */
