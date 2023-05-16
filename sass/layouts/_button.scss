@@ -1,0 +1,35 @@
+// Main btn
+.btn {
+  @include font(17px, 700, 1.2);
+
+  color: $white-text;
+  background-color: $accent-color;
+  padding: 16px 60px;
+  margin: 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &_destinations {
+    padding: 14px 38px;
+  }
+}
+
+// Featured btn
+.featured-btn {
+    @include font(17px, 600, 1.2);
+  
+    display: flex;
+    align-items: center;
+    padding: 18px 0px;
+    color: $accent-color;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .arrow-accent {
+    fill: $accent-color;
+  }

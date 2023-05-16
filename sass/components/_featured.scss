@@ -1,0 +1,75 @@
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 172px;
+}
+
+/* по поводу кнопки View all в js просто берем изображения 
+с API а стили должні подтянуться с css */
+.featured-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 1120px; /* когда установлю padding удрать width */
+}
+
+.featured-btn {
+  @include font(17px, 600, 1.2);
+
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  color: $accent-color;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrow-accent {
+  fill: $accent-color;
+}
+
+.featured-img {
+  display: flex;
+  // margin: -48px;
+}
+
+.test {
+  margin: 12px;
+  width: calc(100% / 4 - 24px);
+}
+
+.img-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 261px;
+  height: 332px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  border-radius: 10px;
+  width: 142px;
+  height: 75px;
+  background-color: #fff;
+}
+
+.overlay-title {
+  @include font(17px, 600, 1.5);
+
+  color: $description-first;
+  margin-bottom: 0;
+  padding: 8px 12px 0 24px;
+}
+
+.overlay-subtitle {
+  @include font(15px, 500, 1.6);
+
+  color: $description-second;
+  padding-left: 24px;
+}

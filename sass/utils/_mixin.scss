@@ -30,8 +30,8 @@
     line-height: $lh;
   }
   
-  @mixin short-font($fs, $lh) {
-    font-size: $fs;
+  @mixin short-font($fw, $lh) {
+    font-weight: $fw;
     line-height: $lh;
   }
 

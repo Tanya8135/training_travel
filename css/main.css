@@ -174,6 +174,7 @@ p {
   font-weight: 700;
   line-height: 1.3;
   font-family: "Playfair Display", serif;
+  color: #202336;
   width: 356px;
 }
 
@@ -236,7 +237,180 @@ p {
   fill: #4A4C53;
 }
 
-.choice-btn {
+.img-hero {
+  padding-top: 72px;
+}
+
+.destinations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 272px 0 260px;
+}
+
+.destinations-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.destinations-box {
+  padding-left: 104px;
+}
+
+.destinations-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: "Playfair Display", serif;
+  color: #202336;
+  width: 481px;
+}
+.destinations-title_about {
+  width: 346px;
+}
+
+.destinations-text {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.8;
+  font-family: "Mulish", sans-serif;
+  color: #7D7987;
+  width: 450px;
+  margin-bottom: 39px;
+}
+
+.featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 172px;
+}
+
+/* по поводу кнопки View all в js просто берем изображения 
+с API а стили должні подтянуться с css */
+.featured-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1120px; /* когда установлю padding удрать width */
+}
+
+.featured-btn {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+  color: #FB8F1D;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrow-accent {
+  fill: #FB8F1D;
+}
+
+.featured-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.test {
+  margin: 12px;
+  width: calc(25% - 24px);
+}
+
+.img-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 261px;
+  height: 332px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  border-radius: 10px;
+  width: 142px;
+  height: 75px;
+  background-color: #fff;
+}
+
+.overlay-title {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #042521;
+  margin-bottom: 0;
+  padding: 8px 12px 0 24px;
+}
+
+.overlay-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #80918E;
+  padding-left: 24px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 248px;
+}
+
+.about-content {
+  width: 450px;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding-bottom: 96px;
+}
+
+.btn {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.2;
@@ -249,16 +423,28 @@ p {
   outline: none;
   cursor: pointer;
 }
-
-.img-hero {
-  padding-top: 72px;
+.btn_destinations {
+  padding: 14px 38px;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
+.featured-btn {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0px;
+  color: #FB8F1D;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.section {
-  padding-bottom: 96px;
+.arrow-accent {
+  fill: #FB8F1D;
 }/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travel</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -26,7 +26,7 @@
             <li class="nav-item">Home</li>
             <li class="nav-item">Destinations</li>
             <li class="nav-item">About</li>
-            <li class="nav-item">Partner</li>
+            <li class="nav-item">Testimonials</li>
           </ul>
         </nav>
 
@@ -38,6 +38,7 @@
     </header>
 
     <main>
+      <!-- Hero -->
       <section class="hero">
         <div class="container-hero">
           <div class="content-box-hero">
@@ -86,7 +87,7 @@
                   </div>
                 </label>
               </form>
-              <button class="choice-btn">Explore</button>
+              <button type="button" class="btn">Explore</button>
             </div>
           </div>
           <div class="img-hero">
@@ -96,6 +97,172 @@
               src="./img/thousand-01.png"
               alt="image"
             />
+          </div>
+        </div>
+      </section>
+
+      <!-- Destinations -->
+      <section class="destinations">
+        <div class="destinations-container">
+          <div class="img-destinations">
+            <img
+              srcset="
+                ./img/thousand-02_659.png    659w,
+                ./img/thousand-02@2_659.png 1318w
+              "
+              sizes="(min-width: 1600px) 659px, (min-width: 768px) 659px, 100vw"
+              src="./img/thousand-02_659.png"
+              alt="image"
+            />
+          </div>
+          <div class="destinations-box">
+            <h2 class="destinations-title">A new way to explore the world</h2>
+            <p class="destinations-text">
+              For decades travellers have reached for Lonely Planet books when
+              looking to plan and execute their perfect trip, but now, they can
+              also let Lonely Planet Experiences lead the way
+            </p>
+            <!-- додати більше опису, сховати в js і зробити через js 
+            функціонал при натисканні на кнопку, щоб з'являвся наступний текст -->
+            <button type="button" class="btn btn_destinations">
+              Learn more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured -->
+      <section class="featured">
+        <div class="featured-container">
+          <div class="featured-box">
+            <h2 class="destinations-title">Featured destinations</h2>
+            <button type="button" class="featured-btn (transparent-btn)">
+              View all
+              <svg width="24" height="12" class="arrow-accent">
+                <use href="./img/icon.svg#icon-arrow-accent"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- Потім перенести цю схему до js і подумаи як
+          зробити так, щоб 4 зображення відображалися на сторінці 
+          а інші з'являлися за кліком по кнопці View all
+          Або залишити цю частину тут, а те зробити за запитом -->
+          <ul class="featured-img">
+            <li class="test">
+              <div class="img-item">
+                <img
+                  srcset="
+                    ./img/image1_261.png   261w,
+                    ./img/image1@2_261.png 522w
+                  "
+                  sizes="(min-width: 1600px) 261px, (min-width: 768px) 261px, 100vw"
+                  src="./img/image1_261.png"
+                  alt="Indonesia"
+                />
+                <div class="overlay">
+                  <p class="overlay-title">Raja Ampat</p>
+                  <p class="overlay-subtitle">Indonesia</p>
+                </div>
+              </div>
+            </li>
+            <li class="test">
+              <div class="img-item">
+                <img
+                  srcset="
+                    ./img/image2_261.png   261w,
+                    ./img/image2@2_261.png 522w
+                  "
+                  sizes="(min-width: 1600px) 261px, (min-width: 768px) 261px, 100vw"
+                  src="./img/image2_261.png"
+                  alt="China"
+                />
+                <div class="overlay">
+                  <p class="overlay-title">Fanjingshan</p>
+                  <p class="overlay-subtitle">China</p>
+                </div>
+              </div>
+            </li>
+            <li class="test">
+              <div class="img-item">
+                <img
+                  srcset="
+                    ./img/image3_261.png   261w,
+                    ./img/image3@2_261.png 522w
+                  "
+                  sizes="(min-width: 1600px) 261px, (min-width: 768px) 261px, 100vw"
+                  src="./img/image3_261.png"
+                  alt="Switzerland"
+                />
+                <div class="overlay">
+                  <p class="overlay-title">Vevey</p>
+                  <p class="overlay-subtitle">Montenegro</p>
+                </div>
+              </div>
+            </li>
+            <li class="test">
+              <div class="img-item">
+                <img
+                  srcset="
+                    ./img/image4_261.png   261w,
+                    ./img/image4@2_261.png 522w
+                  "
+                  sizes="(min-width: 1600px) 261px, (min-width: 768px) 261px, 100vw"
+                  src="./img/image4_261.png"
+                  alt="Indonesia"
+                />
+                <div class="overlay">
+                  <p class="overlay-title">Skadar</p>
+                  <p class="overlay-subtitle">Montenegro</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about">
+        <div class="about-container">
+          <div class="about-content">
+            <h2 class="destinations-title destinations-title_about">
+              Guides by Thousand Sunny
+            </h2>
+            <p class="destinations-text">
+              Packed with tips and advice from our on-the-ground experts, our
+              city guides app (iOS and Android) is the ultimate resource before
+              and during a trip.
+            </p>
+
+            <button type="button" class="btn">Download</button>
+          </div>
+        </div>
+        <div class="about-img">
+          <img
+            srcset="
+              ./img/Thousand-03_599.png    599w,
+              ./img/Thousand-03@2_599.png 1198w
+            "
+            sizes="(min-width: 1600px) 599px, (min-width: 768px) 599px, 100vw"
+            src="./img/Thousand-03_599.png"
+            alt="image"
+          />
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <div class="testimonials-container">
+          <div class="testimonials-content">
+            <h2 class="destinations-title">Testimonials</h2>
+
+            <p class="testimonials-text">
+              “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+              dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit
+              amet turpis nec”
+            </p>
+
+            <p class="testimonials-name">Edward Newgate</p>
+            <p class="testimonials-status">Founder Circle</p>
           </div>
         </div>
       </section>
