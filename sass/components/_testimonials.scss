@@ -1,3 +1,30 @@
 .testimonials {
-    display: flex;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials-content {
+  width: 450px;
+}
+
+.testimonials-text {
+  @include font(24px, 400, 1.5);
+
+  font-family: "Mulish", sans-serif;
+  color: $black-text;
+  margin-bottom: 40px;
+}
+
+.testimonials-name {
+  @include font(22px, 700, 2.2);
+
+  color: $black-text;
+  margin: 0;
+}
+
+.testimonials-status {
+  @include font(18px, 400, 1.1);
+
+  color: $status-color;
+  margin: 0;
 }
