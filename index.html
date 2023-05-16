@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-   <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -40,22 +40,62 @@
     <main>
       <section class="hero">
         <div class="container-hero">
-          <h1 class="title-hero">Explore and Travel</h1>
-          <b class="subtitle-hero">Holiday finder</b>
-          <div class="box-choice">
-            <form class="choice">
-              <label class="test-label"><input class="test-input" type="text" placeholder="Location" /></label>
-              <label class="test-label"><input class="test-input" type="text" placeholder="Activity" /></label>
-              <label class="test-label"><input class="test-input" type="text" placeholder="Grade" /></label>
-              <label class="test-label"><input class="test-input" type="text" placeholder="Date" /></label>
-            </form>
-            <button class="choice-btn">Explore</button>
+          <div class="content-box-hero">
+            <h1 class="title-hero">Explore and Travel</h1>
+            <b class="subtitle-hero">Holiday finder</b>
+            <div class="box-choice">
+              <form class="choice">
+                <label class="test-label"
+                  ><input
+                    class="test-input"
+                    type="text"
+                    placeholder="Location"
+                  />
+                  <div>
+                    <svg width="10" height="6" class="arrow-choice">
+                      <use href="./img/icon.svg#icon-arrow-choice-hero"></use>
+                    </svg>
+                  </div>
+                </label>
+                <label class="test-label"
+                  ><input
+                    class="test-input"
+                    type="text"
+                    placeholder="Activity"
+                  />
+                  <div>
+                    <svg width="10" height="6" class="arrow-choice">
+                      <use href="./img/icon.svg#icon-arrow-choice-hero"></use>
+                    </svg>
+                  </div>
+                </label>
+                <label class="test-label"
+                  ><input class="test-input" type="text" placeholder="Grade" />
+                  <div>
+                    <svg width="10" height="6" class="arrow-choice">
+                      <use href="./img/icon.svg#icon-arrow-choice-hero"></use>
+                    </svg>
+                  </div>
+                </label>
+                <label class="test-label"
+                  ><input class="test-input" type="text" placeholder="Date" />
+                  <div>
+                    <svg width="10" height="6" class="arrow-choice">
+                      <use href="./img/icon.svg#icon-arrow-choice-hero"></use>
+                    </svg>
+                  </div>
+                </label>
+              </form>
+              <button class="choice-btn">Explore</button>
+            </div>
           </div>
           <div class="img-hero">
-            <img srcset="./img/thousand-01.png 687w,
-            ./img/thousand-01@2.png 1374w"
-            sizes="(min-width: 1600px) 687px, (min-width: 768px) 687px, 100vw"            
-            src="./img/thousand-01.png" alt="image">
+            <img
+              srcset="./img/thousand-01.png 687w, ./img/thousand-01@2.png 1374w"
+              sizes="(min-width: 1600px) 687px, (min-width: 768px) 687px, 100vw"
+              src="./img/thousand-01.png"
+              alt="image"
+            />
           </div>
         </div>
       </section>
