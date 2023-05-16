@@ -1,7 +1,16 @@
 .header {
-    padding: 32px 191px 0 191px;
+  padding: 32px 191px 0 191px;
 }
 
 // .logo {
 
 // }
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  color: red;
+}

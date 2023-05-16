@@ -1,0 +1,30 @@
+// .container-hero {
+//   display: flex;
+// }
+
+.box-choice {
+  width: 471px;
+}
+
+.choice {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.test-label {
+  width: 50%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.test-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.title-hero {
+  color: red;
+}
