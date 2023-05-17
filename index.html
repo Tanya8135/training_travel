@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container container">
         <nav>
           <a href="/index.html" class="logo"
             ><img src="/img/logo@2_41x41.png" alt="logo" width="41" />
@@ -40,7 +40,7 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="container-hero">
+        <div class="container container-hero">
           <div class="content-box-hero">
             <h1 class="title-hero">Explore and Travel</h1>
             <b class="subtitle-hero">Holiday finder</b>
@@ -103,7 +103,7 @@
 
       <!-- Destinations -->
       <section class="destinations">
-        <div class="destinations-container">
+        <div class="destinations-container container">
           <div class="img-destinations">
             <img
               srcset="
@@ -133,7 +133,7 @@
 
       <!-- Featured -->
       <section class="featured">
-        <div class="featured-container">
+        <div class="featured-container container">
           <div class="featured-box">
             <h2 class="destinations-title">Featured destinations</h2>
             <button type="button" class="featured-btn (transparent-btn)">
@@ -222,7 +222,7 @@
 
       <!-- About -->
       <section class="about">
-        <div class="about-container">
+        <div class="about-container container">
           <div class="about-content">
             <h2 class="destinations-title destinations-title_about">
               Guides by Thousand Sunny
@@ -251,10 +251,37 @@
 
       <!-- Testimonials -->
       <section class="testimonials">
-        <div class="testimonials-container">
+        <div class="testimonials-container container">
           <div class="testimonials-content">
-            <h2 class="destinations-title">Testimonials</h2>
+            <h2 class="destinations-title testimonials-title">Testimonials</h2>
 
+            <ul class="star-list">
+              <li class="star-item">
+                <svg width="26" height="24" class="icon-star">
+                  <use href="./img/icon.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="star-item">
+                <svg width="26" height="24" class="icon-star">
+                  <use href="./img/icon.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="star-item">
+                <svg width="26" height="24" class="icon-star">
+                  <use href="./img/icon.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="star-item">
+                <svg width="26" height="24" class="icon-star">
+                  <use href="./img/icon.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="star-item">
+                <svg width="26" height="24" class="icon-star">
+                  <use href="./img/icon.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
             <p class="testimonials-text">
               “Quisque in lacus a urna fermentum euismod. Integer mi nibh,
               dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit
@@ -263,6 +290,28 @@
 
             <p class="testimonials-name">Edward Newgate</p>
             <p class="testimonials-status">Founder Circle</p>
+          </div>
+
+          <div class="testimonials-img">
+            <img
+              srcset="./img/man1_384.png 384w, ./img/man1@2_384.png"
+              sizes="(min-width: 1600px) 384px, (min-width: 768px) 384px, 100vw"
+              src="./img/man1_384.png"
+              alt="Man"
+            />
+
+            <div class="testimonials-overflow">
+              <div class="circle">
+                <svg width="24" height="12" class="arrow-testimonials">
+                  <use href="./img/icon.svg#icon-arrow-prev"></use>
+                </svg>
+              </div>
+              <div class="circle">
+                <svg width="24" height="12" class="arrow-testimonials">
+                  <use href="./img/icon.svg#icon-arrow-accent"></use>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </section>
