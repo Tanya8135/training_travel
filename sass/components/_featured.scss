@@ -45,18 +45,3 @@
   height: 75px;
   background-color: #fff;
 }
-
-.overlay-title {
-  @include font(17px, 600, 1.5);
-
-  color: $description-first;
-  margin-bottom: 0;
-  padding: 8px 12px 0 24px;
-}
-
-.overlay-subtitle {
-  @include font(15px, 500, 1.6);
-
-  color: $description-second;
-  padding-left: 24px;
-}
