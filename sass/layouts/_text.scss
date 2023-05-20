@@ -4,6 +4,7 @@
 
   font-family: "Playfair Display", serif;
   color: $title-text;
+  padding-bottom: 72px;
   width: 356px;
 }
 
@@ -31,6 +32,7 @@
 
   font-family: "Playfair Display", serif;
   color: $title-text;
+  padding-bottom: 56px;
   width: 481px;
 
   &_about {
@@ -50,6 +52,7 @@
 // Stories
 .title-stories {
   padding-top: 20px;
+  padding-bottom: 56px;
   margin: 0;
 }
 
@@ -76,3 +79,25 @@
 }
 
 // Footer
+.footer-text {
+  @include font(18px, 300, 1.6);
+
+  font-family: "Mulish", sans-serif;
+  color: $primary-footer-text;
+
+  &__rights-reserved {
+    font-size: 17px;
+    padding-top: 56px;
+  }
+
+  &__box {
+    line-height: 2.1;
+  }
+}
+
+.footer-title {
+  @include font(19px, 700, 3.16);
+
+  font-family: "Mulish", sans-serif;
+  color: $footer-title;
+}

@@ -16,20 +16,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="container container">
-        <nav>
+      <div class="header-container container">
+        <nav class="nav-header">
           <a href="/index.html" class="logo"
             ><img src="/img/logo@2_41x41.png" alt="logo" width="41" />
           </a>
 
           <ul class="nav-list">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Destinations</li>
-            <li class="nav-item">About</li>
-            <li class="nav-item">Testimonials</li>
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">Destinations</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item"><a href="">Testimonials</a></li>
           </ul>
         </nav>
-
         <div class="box-header-btn">
           <button class="btn-header">Login</button>
           <button class="btn-header">Register</button>
@@ -39,7 +38,7 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="section hero">
         <div class="container container-hero">
           <div class="content-box-hero">
             <h1 class="title-hero">Explore and Travel</h1>
@@ -102,7 +101,7 @@
       </section>
 
       <!-- Destinations -->
-      <section class="destinations">
+      <section class="section destinations">
         <div class="destinations-container container">
           <div class="img-destinations">
             <img
@@ -132,7 +131,7 @@
       </section>
 
       <!-- Featured -->
-      <section class="featured">
+      <section class="section featured">
         <div class="featured-container container">
           <div class="featured-box">
             <h2 class="secondary-title">Featured destinations</h2>
@@ -148,7 +147,7 @@
           а інші з'являлися за кліком по кнопці View all
           Або залишити цю частину тут, а те зробити за запитом -->
           <ul class="featured-img">
-            <li class="test">
+            <li class="featured-item">
               <div class="img-item">
                 <img
                   srcset="
@@ -165,7 +164,7 @@
                 </div>
               </div>
             </li>
-            <li class="test">
+            <li class="featured-item">
               <div class="img-item">
                 <img
                   srcset="
@@ -182,7 +181,7 @@
                 </div>
               </div>
             </li>
-            <li class="test">
+            <li class="featured-item">
               <div class="img-item">
                 <img
                   srcset="
@@ -195,11 +194,11 @@
                 />
                 <div class="overlay">
                   <p class="overlay-title">Vevey</p>
-                  <p class="overlay-subtitle">Montenegro</p>
+                  <p class="overlay-subtitle">Switzerland</p>
                 </div>
               </div>
             </li>
-            <li class="test">
+            <li class="featured-item">
               <div class="img-item">
                 <img
                   srcset="
@@ -221,7 +220,7 @@
       </section>
 
       <!-- About -->
-      <section class="about">
+      <section class="section about">
         <div class="about-container container">
           <div class="about-content">
             <h2 class="secondary-title secondary-title_about">
@@ -235,22 +234,23 @@
 
             <button type="button" class="btn">Download</button>
           </div>
-        </div>
-        <div class="about-img">
-          <img
-            srcset="
-              ./img/Thousand-03_599.png    599w,
-              ./img/Thousand-03@2_599.png 1198w
-            "
-            sizes="(min-width: 1600px) 599px, (min-width: 768px) 599px, 100vw"
-            src="./img/Thousand-03_599.png"
-            alt="image"
-          />
+
+          <div class="about-img">
+            <img
+              srcset="
+                ./img/Thousand-03_599.png    599w,
+                ./img/Thousand-03@2_599.png 1198w
+              "
+              sizes="(min-width: 1600px) 599px, (min-width: 768px) 599px, 100vw"
+              src="./img/Thousand-03_599.png"
+              alt="image"
+            />
+          </div>
         </div>
       </section>
 
       <!-- Testimonials -->
-      <section class="testimonials">
+      <section class="section testimonials">
         <div class="testimonials-container container">
           <div class="testimonials-content">
             <h2 class="secondary-title testimonials-title">Testimonials</h2>
@@ -317,8 +317,8 @@
       </section>
 
       <!-- Stories -->
-      <section class="stories">
-        <div class="stories-container">
+      <section class="section stories">
+        <div class="stories-container container">
           <div class="stories-box">
             <h2 class="secondary-title">Trending stories</h2>
             <button type="button" class="transparent-btn">
@@ -440,32 +440,146 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <div class="footer-container">
-          <div class="info-footer-box">
-            <a href="/index.html" class="logo"
-              ><img src="/img/logo@2_41x41.png" alt="logo" width="41" />
-            </a>
+        <div class="footer-container container">
+          <div class="footer-box">
+            <div class="info-footer-box">
+              <a href="/index.html" class="logo"
+                ><img src="/img/logo@2_41x41.png" alt="logo" width="41" />
+              </a>
 
-            <div class="info-footer">
-              <p class="text-footer">
-                Plan and book your perfect trip with expert advice, travel tips
-                destination information from us
-              </p>
+              <div class="info-footer">
+                <p class="footer-text">
+                  Plan and book your perfect trip with expert advice, travel
+                  tips destination information from us
+                </p>
 
-              <p class="text-footer__rights-reserved">
-                &copy;2020 Thousand Sunny. All rights reserved
-              </p>
+                <p class="footer-text footer-text__rights-reserved">
+                  &copy;2020 Thousand Sunny. All rights reserved
+                </p>
+              </div>
+            </div>
+
+            <div class="destinations">
+              <b class="footer-title">Destinations</b>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box">Africa</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box">Antarctica</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box">Asia</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box">Europe</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box">America</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="shop">
+              <b class="footer-title">Shop</b>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Destination Guides</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Pictorial & Gifts</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Special Offers</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Delivery Times</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box">FAQs</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="interests">
+              <b class="footer-title">Interests</b>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Adventure Travel</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Art And Culture</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Wildlife And Nature</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Family Holidays</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-text footer-text__box"
+                    >Food And Drink</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
+          <div class="line"></div>
 
-          <div class="destinations">
-            <b class="destinations-title">Destinations</b>
-            <ul class="destinations-list">
-              <li class="destinations-item"><a href="">Africa</a></li>
-              <li class="destinations-item"><a href="">Antarctica</a></li>
-              <li class="destinations-item"><a href="">Asia</a></li>
-              <li class="destinations-item"><a href="">Europe</a></li>
-              <li class="destinations-item"><a href="">America</a></li>
+          <!-- Social icon -->
+          <div class="social-icon">
+            <ul class="icon-list">
+              <li class="icon-item">
+                <a href="">
+                  <svg width="25" height="20">
+                    <use href="./img/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="">
+                  <svg width="10" height="22">
+                    <use href="./img/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="">
+                  <svg width="22" height="22">
+                    <use href="./img/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="">
+                  <svg width="22" height="22">
+                    <use href="./img/icon.svg#icon-linkedIn"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="">
+                  <svg width="28" height="20">
+                    <use href="./img/icon.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,18 +1,48 @@
 .footer {
-  display: inline-flex;
   background: $footer-background;
-  min-width: 1920px;
+  padding-top: 78px;
 }
 
 .footer-container {
+  padding: 76px 192px 32px 192px;
+}
+
+.footer-box {
   display: flex;
-  padding: 76px 192px;
+  justify-content: space-between;
+  padding-bottom: 80px;
 }
 
 .info-footer {
-  width: 337px;
+  padding-top: 28px;
+  width: 370px;
 }
 
 .destinations {
-    padding: 0;
+  padding: 0;
+}
+
+.line {
+  border-top: 0.6px solid $line-footer;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  padding-bottom: 32px;
+}
+
+.icon-item {
+  margin-right: 28px;
+  padding: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

@@ -152,7 +152,49 @@ p {
 }
 
 .header {
-  padding: 32px 191px 0 191px;
+  padding: 32px 105px 0 80px;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-right: 32px;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 36px;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.box-header-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container-hero {
@@ -237,7 +279,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 172px;
 }
 
 /* по поводу кнопки View all в js просто берем изображения 
@@ -252,7 +293,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1120px; /* когда установлю padding удрать width */
 }
 
 .arrow-accent {
@@ -263,10 +303,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.test {
-  margin: 12px;
+.featured-item {
+  margin: 24px;
   width: calc(25% - 24px);
 }
 
@@ -289,17 +332,16 @@ p {
   background-color: #fff;
 }
 
-.about {
+.about-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 248px;
 }
 
 .about-content {
@@ -451,7 +493,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1222px; /* удалить, когда будет падинг по бокам (container) */
 }
 
 .stories-list {
@@ -464,11 +505,9 @@ p {
 }
 
 .stories-item {
-  margin-right: 20px;
-  width: 266px;
-}
-.stories-item:last-child {
-  margin-right: 0;
+  margin: 20px;
+  width: calc(25% - 20px);
+  min-width: 266px;
 }
 
 .stories-img {
@@ -481,35 +520,89 @@ p {
 }
 
 .footer {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   background: #F9F9FB;
-  min-width: 1920px;
+  padding-top: 78px;
 }
 
 .footer-container {
+  padding: 76px 192px 32px 192px;
+}
+
+.footer-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 76px 192px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 80px;
 }
 
 .info-footer {
-  width: 337px;
+  padding-top: 28px;
+  width: 370px;
 }
 
 .destinations {
   padding: 0;
 }
 
+.line {
+  border-top: 0.6px solid #C4C4C4;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-icon {
+  padding-bottom: 32px;
+}
+
+.icon-item {
+  margin-right: 28px;
+  padding: 12px;
+}
+.icon-item:last-child {
+  margin-right: 0;
+}
+
 .container {
-  max-width: 1600px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 0 96px;
 }
 
 .section {
-  padding-bottom: 96px;
+  padding-bottom: 188px;
+}
+
+.btn-header {
+  color: #FB8F1D;
+  margin-right: 20px;
+  padding: 12px 46px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #FB8F1D;
+  outline: none;
+  cursor: pointer;
+}
+.btn-header:hover {
+  background-color: #FB8F1D;
+  color: #fff;
+}
+.btn-header:last-child {
+  margin-right: 0;
 }
 
 .btn {
@@ -581,6 +674,7 @@ p {
   line-height: 1.3;
   font-family: "Playfair Display", serif;
   color: #202336;
+  padding-bottom: 72px;
   width: 356px;
 }
 
@@ -608,6 +702,7 @@ p {
   line-height: 1.4;
   font-family: "Playfair Display", serif;
   color: #202336;
+  padding-bottom: 56px;
   width: 481px;
 }
 .secondary-title_about {
@@ -626,6 +721,7 @@ p {
 
 .title-stories {
   padding-top: 20px;
+  padding-bottom: 56px;
   margin: 0;
 }
 
@@ -650,4 +746,27 @@ p {
   line-height: 1.6;
   color: #80918E;
   padding-left: 24px;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: "Mulish", sans-serif;
+  color: #848484;
+}
+.footer-text__rights-reserved {
+  font-size: 17px;
+  padding-top: 56px;
+}
+.footer-text__box {
+  line-height: 2.1;
+}
+
+.footer-title {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 3.16;
+  font-family: "Mulish", sans-serif;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 172px;
 }
 
 /* по поводу кнопки View all в js просто берем изображения 
@@ -11,7 +10,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  width: 1120px; /* когда установлю padding удрать width */
+  // width: 1120px; /* когда установлю padding удрать width */
 }
 
 .arrow-accent {
@@ -20,10 +19,11 @@
 
 .featured-img {
   display: flex;
+  justify-content: center;
 }
 
-.test {
-  margin: 12px;
+.featured-item {
+  margin: 24px;
   width: calc(100% / 4 - 24px);
 }
 

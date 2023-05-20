@@ -1,4 +1,24 @@
 // Main btn
+.btn-header {
+  color: $accent-color;
+  margin-right: 20px;
+  padding: 12px 46px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid $accent-color;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $white-text;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .btn {
   @include font(17px, 700, 1.2);
 

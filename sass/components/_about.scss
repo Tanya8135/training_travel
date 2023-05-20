@@ -1,10 +1,9 @@
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 248px;
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-content {
-    width: 450px;
+  width: 450px;
 }
