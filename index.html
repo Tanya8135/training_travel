@@ -136,7 +136,7 @@
         <div class="featured-container container">
           <div class="featured-box">
             <h2 class="destinations-title">Featured destinations</h2>
-            <button type="button" class="featured-btn (transparent-btn)">
+            <button type="button" class="transparent-btn">
               View all
               <svg width="24" height="12" class="arrow-accent">
                 <use href="./img/icon.svg#icon-arrow-accent"></use>
@@ -319,38 +319,120 @@
       <!-- Stories -->
       <section class="stories">
         <div class="stories-container">
+          <div class="stories-box">
+            <h2 class="destinations-title">Trending stories</h2>
+            <button type="button" class="transparent-btn">
+              View all
+              <svg width="24" height="12" class="arrow-accent">
+                <use href="./img/icon.svg#icon-arrow-accent"></use>
+              </svg>
+            </button>
+          </div>
+
           <ul class="stories-list">
             <li class="stories-item">
               <div class="stories-img">
-                <img src="" alt="" />
+                <img
+                  srcset="
+                    ./img/stories1_261.png   261w,
+                    ./img/stories1@2_261.png 522w
+                  "
+                  sizes="(min-width: 1600px) 261px, (min-width: 768px) 261px, 100vw"
+                  src="./img/stories1_261.png"
+                  alt="Yoga"
+                />
               </div>
-              <h3 class="title-stories"></h3>
-              <p class="stories-text"></p>
-              <button type="button" class="btn-stories"></button>
+              <h3 class="title-stories">
+                The many benefits of taking a healing holiday
+              </h3>
+              <p class="stories-text">
+                ‘Helaing holidays’ are on the rise tohelp maximise your health
+                and happines...
+              </p>
+              <button
+                type="button"
+                class="transparent-btn transparent-btn__read-more-btn"
+              >
+                Read more
+              </button>
             </li>
             <li class="stories-item">
               <div class="stories-img">
-                <img src="" alt="" />
+                <img
+                  srcset="
+                    ./img/stories2_261.png   261w,
+                    ./img/stories2@2_261.png 522w
+                  "
+                  sizes="(min-width: 1600px) 261px, (min-width: 768px) 261px, 100vw"
+                  src="./img/stories2_261.png"
+                  alt="Food"
+                />
               </div>
-              <h3 class="title-stories"></h3>
-              <p class="stories-text"></p>
-              <button type="button" class="btn-stories"></button>
+              <h3 class="title-stories">
+                The best Kyoto restaurant to try Japanese food
+              </h3>
+              <p class="stories-text">
+                From tofu to teahouses, here’s our guide to Kyoto’s best
+                restaurants to visit...
+              </p>
+              <button
+                type="button"
+                class="transparent-btn transparent-btn__read-more-btn"
+              >
+                Read more
+              </button>
             </li>
             <li class="stories-item">
               <div class="stories-img">
-                <img src="" alt="" />
+                <img
+                  srcset="
+                    ./img/stories3_261.png   261w,
+                    ./img/stories3@2_261.png 522w
+                  "
+                  sizes="(min-width: 1600px) 261px, (min-width: 768px) 261px, 100vw"
+                  src="./img/stories3_261.png"
+                  alt="Pyramid"
+                />
               </div>
-              <h3 class="title-stories"></h3>
-              <p class="stories-text"></p>
-              <button type="button" class="btn-stories"></button>
+              <h3 class="title-stories">
+                Skip Chichen Itza and head to this remote Yucatan
+              </h3>
+              <p class="stories-text">
+                It’s remote and challenging to get, but braving the jungle and
+                exploring these ruins without the...
+              </p>
+              <button
+                type="button"
+                class="transparent-btn transparent-btn__read-more-btn"
+              >
+                Read more
+              </button>
             </li>
             <li class="stories-item">
               <div class="stories-img">
-                <img src="" alt="" />
+                <img
+                  srcset="
+                    ./img/stories4_261.png   261w,
+                    ./img/stories4@2_261.png 522w
+                  "
+                  sizes="(min-width: 1600px) 261px, (min-width: 768px) 261px, 100vw"
+                  src="./img/stories4_261.png"
+                  alt="Wave"
+                />
               </div>
-              <h3 class="title-stories"></h3>
-              <p class="stories-text"></p>
-              <button type="button" class="btn-stories"></button>
+              <h3 class="title-stories">
+                Surf’s up at these beginner spots around the world
+              </h3>
+              <p class="stories-text">
+                If learning to surf has in on your to- do list for a while, the
+                good news is: it’s never too late...
+              </p>
+              <button
+                type="button"
+                class="transparent-btn transparent-btn__read-more-btn"
+              >
+                Read more
+              </button>
             </li>
           </ul>
         </div>

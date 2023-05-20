@@ -18,18 +18,37 @@
 
 // Featured btn
 .featured-btn {
-    @include font(17px, 600, 1.2);
-  
-    display: flex;
-    align-items: center;
-    padding: 18px 0px;
-    color: $accent-color;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  @include font(17px, 600, 1.2);
+
+  display: flex;
+  align-items: center;
+  padding: 18px 0px;
+  color: $accent-color;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrow-accent {
+  fill: $accent-color;
+}
+
+.transparent-btn {
+  @include font(17px, 600, 1.2);
+
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  color: $accent-color;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &__read-more-btn {
+    @include font(15px, 600, 1.9);
+
+    padding: 12px 24px 12px 0;
   }
-  
-  .arrow-accent {
-    fill: $accent-color;
-  }
+}

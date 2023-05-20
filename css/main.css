@@ -310,24 +310,6 @@ p {
   width: 1120px; /* когда установлю padding удрать width */
 }
 
-.featured-btn {
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 12px 24px;
-  color: #FB8F1D;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .arrow-accent {
   fill: #FB8F1D;
 }
@@ -519,6 +501,68 @@ p {
           transform: translate(-50%, -50%);
 }
 
+.stories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 271px;
+}
+
+.stories-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1222px; /* удалить, когда будет падинг по бокам (container) */
+}
+
+.stories-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stories-item {
+  margin-right: 20px;
+  width: 266px;
+}
+.stories-item:last-child {
+  margin-right: 0;
+}
+
+.stories-img {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 261px;
+  height: 233px;
+}
+
+.title-stories {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.stories-text {
+  padding-top: 16px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -565,4 +609,28 @@ p {
 
 .arrow-accent {
   fill: #FB8F1D;
+}
+
+.transparent-btn {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+  color: #FB8F1D;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.transparent-btn__read-more-btn {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.9;
+  padding: 12px 24px 12px 0;
 }/*# sourceMappingURL=main.css.map */
