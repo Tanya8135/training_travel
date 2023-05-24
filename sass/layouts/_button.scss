@@ -72,3 +72,16 @@
     padding: 12px 24px 12px 0;
   }
 }
+
+button {
+  @include font(17px, 600, 1.2);
+
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  color: $accent-color;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
